@@ -7,6 +7,7 @@ def run_bot():
     try:
         session = requests.Session()
         req = session.post(botconfig.cpanel_url, data=botconfig.login_data)
+        print(req.status_code)
         bot_cookies = {
             'mod':urllib.request.unquote(session.cookies.get_dict()['mod']),
         }
