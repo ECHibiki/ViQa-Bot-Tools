@@ -18,3 +18,4 @@ def run_bot():
             print(str(traceback.format_exc()))
             log.write(str(traceback.format_exc()) + "\n\n")
             log.close
+run_bot()
